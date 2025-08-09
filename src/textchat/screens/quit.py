@@ -3,7 +3,8 @@ from textual.containers import Grid
 from textual.screen import ModalScreen
 from textual.widgets import Button, Label
 
-class QuitScreen(ModalScreen[bool]):  
+
+class QuitScreen(ModalScreen[bool]):
     """Screen with a dialog to quit."""
 
     def compose(self) -> ComposeResult:
@@ -17,6 +18,6 @@ class QuitScreen(ModalScreen[bool]):
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "quit":
             self.dismiss(True)
-            
+
         else:
             self.dismiss(False)

@@ -1,4 +1,8 @@
+"""utils/channels.py"""
+
 from ..db.db import ChannelOperations
+
+
 async def load_channels():
     channels = await ChannelOperations().get_channels()
 

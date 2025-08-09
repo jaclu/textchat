@@ -1,10 +1,7 @@
 from textual.app import ComposeResult
 from textual.containers import Grid
 from textual.screen import ModalScreen
-from textual.widgets import Button
-from textual.widgets import Label
-from textual.widgets import TabbedContent
-from textual.widgets import TabPane
+from textual.widgets import Button, Label, TabbedContent, TabPane
 
 
 class WhoisScreen(ModalScreen[bool]):
